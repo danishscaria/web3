@@ -1,0 +1,29 @@
+{
+  "name": "payfi-kickstarter-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for PayFi Kickstarter on Shardeum",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:shardeum": "hardhat run scripts/deploy.ts --network shardeumUnstable",
+    "export-abis": "node scripts/export-abis.ts",
+    "test": "hardhat test"
+  },
+  "keywords": [
+    "ethereum",
+    "shardeum",
+    "solidity",
+    "hardhat",
+    "crowdfunding"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@types/node": "^20.10.5",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
